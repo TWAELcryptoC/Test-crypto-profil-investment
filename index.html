@@ -1,0 +1,171 @@
+def profil_investisseur():
+    questions = [
+        "1. Lorsque vous pensez aux investissements, quelle phrase vous semble la plus vraie ?\n"
+        "A. La sécurité du capital est prioritaire.\n"
+        "B. Je veux une croissance stable avec un minimum de risque.\n"
+        "C. Je suis prêt à prendre des risques mesurés pour maximiser mes rendements.\n"
+        "D. J’aime le risque si les rendements peuvent être significatifs.",
+        
+        "2. À quelle fréquence consultez-vous vos investissements ?\n"
+        "A. Rarement, peut-être une fois par mois.\n"
+        "B. Toutes les deux semaines pour vérifier la progression.\n"
+        "C. Une fois par semaine, j’aime suivre les mouvements.\n"
+        "D. Quotidiennement, parfois plusieurs fois par jour.",
+        
+        "3. Que faites-vous si un investissement perd soudainement 20 % en une journée ?\n"
+        "A. Je pense à vendre pour limiter les pertes.\n"
+        "B. Je m’inquiète mais j’attends de voir.\n"
+        "C. J’envisage d’acheter davantage pour profiter du prix bas.\n"
+        "D. Je double mon investissement pour maximiser un rebond éventuel.",
+        
+        "4. Quelle est votre expérience en matière d’investissement ?\n"
+        "A. Très peu d’expérience.\n"
+        "B. J’ai quelques placements dans des produits sûrs.\n"
+        "C. Je suis assez expérimenté et connais différents types d’actifs.\n"
+        "D. J’ai une expérience solide, y compris dans les investissements à haut risque.",
+        
+        "5. Pour combien de temps envisagez-vous de conserver vos investissements crypto ?\n"
+        "A. Plus de 3 ans.\n"
+        "B. 1 à 3 ans.\n"
+        "C. Entre 6 mois et 1 an.\n"
+        "D. Quelques semaines ou moins.",
+        
+        "6. Quel serait votre investissement idéal ?\n"
+        "A. Un placement stable avec un rendement faible mais garanti.\n"
+        "B. Un actif relativement sûr avec un potentiel de croissance à long terme.\n"
+        "C. Un actif avec un potentiel de gain intéressant même s’il est volatile.\n"
+        "D. Un actif qui peut doubler en un mois, même si c’est risqué.",
+        
+        "7. Votre objectif principal en investissant est de…\n"
+        "A. Protéger mon capital de l’inflation.\n"
+        "B. Diversifier mon épargne de manière équilibrée.\n"
+        "C. Générer des gains significatifs.\n"
+        "D. Maximiser les rendements rapidement.",
+        
+        "8. Quelle part de votre épargne totale êtes-vous prêt à investir en crypto-monnaies ?\n"
+        "A. Moins de 10 %.\n"
+        "B. 10 à 20 %.\n"
+        "C. 20 à 50 %.\n"
+        "D. Plus de 50 %.",
+        
+        "9. Quand vous entendez parler d’un projet crypto prometteur mais risqué, que faites-vous ?\n"
+        "A. Je n’investis pas, trop risqué pour moi.\n"
+        "B. Je fais des recherches et je considère l’investissement si ça semble solide.\n"
+        "C. Je prends une petite position pour tester.\n"
+        "D. J’investis sans hésitation pour ne pas rater l’opportunité.",
+        
+        "10. Préférez-vous un investissement en croissance lente et stable ou en forte fluctuation ?\n"
+        "A. Croissance lente et stable.\n"
+        "B. Plutôt stable, mais avec des pics occasionnels.\n"
+        "C. Croissance rapide avec des fluctuations modérées.\n"
+        "D. Forte fluctuation pour des gains rapides.",
+        
+        "11. À quelle fréquence pensez-vous acheter ou vendre des crypto-monnaies ?\n"
+        "A. Rarement, peut-être une fois par an.\n"
+        "B. Occasionnellement, en fonction des conditions de marché.\n"
+        "C. Régulièrement, tous les mois ou tous les trimestres.\n"
+        "D. Fréquemment, dès qu’une opportunité se présente.",
+        
+        "12. Comment réagiriez-vous si le marché crypto entrait dans une période de baisse prolongée ?\n"
+        "A. Je me retirerais du marché pour préserver mon capital.\n"
+        "B. J’observerais attentivement et attendrais le bon moment pour investir de nouveau.\n"
+        "C. J’accumulerais progressivement pour faire baisser le coût moyen.\n"
+        "D. J’investirais encore plus pour profiter de la baisse des prix.",
+        
+        "13. Dans quel type d’actif avez-vous le plus confiance ?\n"
+        "A. Stablecoins et crypto-monnaies bien établies comme Bitcoin.\n"
+        "B. Grandes capitalisations et quelques altcoins stables.\n"
+        "C. Altcoins à fort potentiel mais modérément risqués.\n"
+        "D. Projets DeFi, NFT ou nouvelles cryptos à faible capitalisation.",
+        
+        "14. En cas de gains importants, quelle est votre stratégie ?\n"
+        "A. Prendre des profits dès que possible pour sécuriser.\n"
+        "B. Prendre une partie des gains et laisser le reste en investissement.\n"
+        "C. Laisser l’investissement grandir tout en surveillant.\n"
+        "D. Réinvestir les gains pour maximiser encore plus.",
+        
+        "15. Quelle est votre vision de l’avenir des crypto-monnaies ?\n"
+        "A. Une opportunité à tester prudemment.\n"
+        "B. Un moyen de diversification intéressant à long terme.\n"
+        "C. Une révolution technologique avec un fort potentiel de croissance.\n"
+        "D. Une chance unique d’obtenir des rendements rapides.",
+        
+        "16. Quelle part de votre épargne êtes-vous prêt à perdre sans que cela n’impacte vos finances ?\n"
+        "A. Moins de 5 %.\n"
+        "B. 5 à 10 %.\n"
+        "C. 10 à 20 %.\n"
+        "D. Plus de 20 %.",
+        
+        "17. Êtes-vous du genre à suivre les tendances du marché ou à rester sur vos positions ?\n"
+        "A. Je ne suis pas vraiment les tendances, je garde mes positions.\n"
+        "B. Je reste attentif, mais sans investir dans les tendances.\n"
+        "C. Je suis les tendances modérément pour adapter mes choix.\n"
+        "D. Je suis prêt à changer de position dès qu’une tendance apparaît.",
+        
+        "18. Avez-vous un plan de sortie pour vos investissements crypto ?\n"
+        "A. Oui, j’ai des objectifs précis et je sors dès qu’ils sont atteints.\n"
+        "B. J’ai un plan de sortie flexible mais basé sur des niveaux de prix.\n"
+        "C. Je garde mes actifs tant qu’ils sont rentables.\n"
+        "D. Je n’ai pas de plan de sortie, je m’adapte selon le marché.",
+        
+        "19. Comment vous informez-vous sur les crypto-monnaies ?\n"
+        "A. Par des sources générales et des conseils prudents.\n"
+        "B. Je consulte des sources spécialisées sans y consacrer trop de temps.\n"
+        "C. J’analyse régulièrement les actualités et tendances crypto.\n"
+        "D. Je suis à l’affût de toutes les opportunités, y compris sur les réseaux sociaux et forums.",
+        
+        "20. Pour conclure, comment évalueriez-vous votre approche vis-à-vis des risques et des opportunités en crypto ?\n"
+        "A. Très prudente, je préfère éviter les pertes.\n"
+        "B. Raisonnée, j’accepte des risques limités.\n"
+        "C. Modérément audacieuse, je suis ouvert à plus de risques pour des gains.\n"
+        "D. Audacieuse, les opportunités priment sur les risques pour moi."
+    ]
+
+    points_mapping = {"A": 1, "B": 2, "C": 3, "D": 4}
+    total_points = 0
+
+    print("Bienvenue au test de profil d'investisseur crypto !\n"
+          "Répondez à chaque question en entrant A, B, C ou D pour découvrir votre profil.\n")
+
+    for i, question in enumerate(questions, 1):
+        while True:
+            print(f"{question}\n")
+            reponse = input("Votre réponse (A, B, C, D) : ").strip().upper()
+            if reponse in points_mapping:
+                total_points += points_mapping[reponse]
+                break
+            else:
+                print("Réponse invalide, veuillez entrer A, B, C ou D.")
+
+    # Détermination du profil selon le score final
+    if 20 <= total_points <= 30:
+        profil = "Conservateur"
+        description = ("Vous êtes un investisseur prudent, préférant la sécurité de votre capital et les gains modestes mais stables. "
+                       "Les crypto-monnaies majeures comme Bitcoin ou les stablecoins, ainsi que des stratégies de conservation, "
+                       "seront plus adaptées à votre profil.")
+    elif 31 <= total_points <= 50:
+        profil = "Équilibré"
+        description = ("Vous êtes prêt à prendre certains risques pour augmenter vos rendements, mais vous faites attention "
+                       "à ne pas compromettre trop de capital. Une diversification entre les cryptos majeures et les altcoins "
+                       "vous conviendra, avec une approche progressive dans vos investissements.")
+    elif 51 <= total_points <= 70:
+        profil = "Dynamique"
+        description = ("Vous avez une tolérance au risque moyenne à élevée et cherchez à maximiser vos gains sans crainte de la volatilité. "
+                       "Vous êtes à l'aise avec des investissements dans des altcoins prometteurs et des cycles de marché, "
+                       "prêt à saisir les opportunités de croissance rapide.")
+    elif 71 <= total_points <= 80:
+        profil = "Spéculatif"
+        description = ("Vous aimez l'adrénaline des investissements à fort risque et à fort potentiel de rendement. "
+                       "Vous n’hésitez pas à explorer les tokens à faible capitalisation et les projets DeFi ou NFT. "
+                       "La prise de risque est une source de motivation pour vous, et vous êtes prêt à des fluctuations "
+                       "importantes pour obtenir des gains rapides.")
+    else:
+        profil = "Inconnu"
+        description = "Erreur dans le calcul des points, merci de réessayer."
+
+    print(f"\nVotre score total est de {total_points} points.")
+    print(f"Votre profil d'investisseur est : {profil}")
+    print(description)
+
+# Lancer le test
+profil_investisseur()
